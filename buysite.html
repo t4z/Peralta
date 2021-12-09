@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="buysite.css">
+	</head>
+<title>Welcome to UGB!</title>
+<body>
+<div class="bodycontainer">
+	<div class="header">
+		<h1>ULTIMATE GENSHIN BOOSTER</h1>
+		<a class="btn-2" href="mainsite.html">HOME</a>
+		<a class="btn-1" href="buysite.html">BUY</a>
+		<a class="btn-2" href="servicesite.html">SERVICES</a>
+		<a class="btn-2" href="supportsite.html">SUPPORT</a>
+		<a class="btn-2" href="disclaimersite.html">DISCLAIMER</a>
+	</div>
+	<div class="menuhr">
+		<h2>SELECT YOUR NEEDS</h2>
+	</div>
+	<div class="menucontainer">
+		<div class="menu">
+			<h2>DAILY COMMISSIONS</h2>
+			<label class="switch">
+				<input id="product11" name="product1" class="menutext" type="radio"> (2$)1 WEEK
+			</label>
+			<label class="switch">
+				<input id="product12" name="product1" class="menutext" type="radio"> (4$)2 WEEKS
+			</label>
+			<label class="switch">
+				<input id="product13" name="product1" class="menutext" type="radio"> (6$)3 WEEKS
+			</label>
+			<label class="switch">
+				<input id="product14" name="product1" class="menutext" type="radio"> (8$)4 WEEKS
+			</label>
+			<label class="switch">
+				<input id="product15" name="product1" class="menutext" type="radio"> (10$)5 WEEKS
+			</label>
+		</div>
+		<div class="menu">
+			<h2>OPEN WORLD MATERIALS (MUST SPECIFY)</h2>
+			<label class="switch">
+				<input name="product2" class="menutext" type="radio"> (2$)1 WEEK
+			</label>
+			<label class="switch">
+				<input name="product2" class="menutext" type="radio"> (4$)2 WEEKS
+			</label>
+			<label class="switch">
+				<input name="product2" class="menutext" type="radio"> (6$)3 WEEKS
+			</label>
+			<label class="switch">
+				<input name="product2" class="menutext" type="radio"> (8$)4 WEEKS
+			</label>
+			<label class="switch">
+				<input name="product2" class="menutext" type="radio"> (10$)5 WEEKS
+			</label>
+			<input value="ex. Hilichurl mats, Samurai mats., etc.."name="matsspecify" class="menutext" type="text">
+		</div>
+		<div class="menu">
+			<h2>ABYSS FLOOR CLEARS</h2>
+			<label class="switch">
+				<input name="product3" class="menutext" type="radio"> (10$)12 STARS
+			</label>
+			<label class="switch">
+				<input name="product3" class="menutext" type="radio"> (25$)24 STARS
+			</label>
+			<label class="switch">
+				<input name="product3" class="menutext" type="radio"> (80$)36 STARS
+			</label>
+		</div>
+		<div class="menu">
+			<h2>ANY DOMAIN CLEARS (MUST SPECIFY)</h2>
+			<label class="switch">
+				<input name="product4" class="menutext" type="radio"> (2$)1 WEEK
+			</label>
+			<label class="switch">
+				<input name="product4" class="menutext" type="radio"> (4$)2 WEEKS
+			</label>
+			<label class="switch">
+				<input name="product4" class="menutext" type="radio"> (6$)3 WEEKS
+			</label>
+			<label class="switch">
+				<input name="product4" class="menutext" type="radio"> (8$)4 WEEKS
+			</label>
+			<label class="switch">
+				<input name="product4" class="menutext" type="radio"> (10$)5 WEEKS
+			</label>
+			<input value="ex. Artifact, Boss, Talent..."name="domainspecify" class="menutext" type="text">
+		</div>
+		
+	</div>
+</div>
+			<button class="submitBtn" onclick="submitfnct()">SUBMIT
+			</button>
+			<p class="submittext" id="demo"></p>
+			    <script language="Javascript">
+				function submitfnct()	{
+					var text1 = "Thank you for your purchase! You will be emailed the instructions on how to send your Account information.";
+					var text2 = prompt('Please type in your e-mail.');
+					var text3 = prompt('Please type in your Debit/Credit Card Number.');
+					
+					document.getElementById("demo").innerHTML
+					= text1, text2, text3;
+				}
+				</script>
+				<br><br><br><br><br>
+	<div class="rightsbar">
+	All rights reserved©
+	</div>
+</body>
+</html>
